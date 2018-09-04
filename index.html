@@ -8,12 +8,41 @@
     <title>Dasar Dasar Vue Js | hasanarofid.com</title>
 </head>
 
+
 <body>
-    <div id="app" v-text="pesan">
+    <div id="app" v-html="pesan"></div>
+    <br>
+    <h3>Show Multidata</h3>
+    <br>
+    <div id="app2">
+        {{ pesan1 }} <br> {{ pesan2 }} <br> {{ pesan3 }}
+    </div>
+    <br>
+    <h3>Kombinasi Output</h3>
+    <br>
+    <div id="app3">
+        <p>{{ pesanapp3 }}</p>
+        <p v-text="pesanapp4"></p>
+        <p v-html="pesanapp5"></p>
+    </div>
+
+    <br>
+    <h3>DIRECTIVE RENDERING TIPE DATA LAIN</h3>
+    <br>
+    <div id="app4">
+        <p>Contoh Text : {{ text }}</p>
+        <p>Contoh Bilangan Bulan : {{ angka1 }}</p>
+        <p>Contoh Decimal : {{ angka2 }}</p>
+        <p>Contoh Plihan Benar : {{ pilihan1 }}</p>
+        <p>Contoh Pilihan Salah : {{ pilihan2 }}</p>
+        <p>Contoh Array : {{ array }}</p>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <script src="https://unpkg.com/vue"></script>
     <script src="apps.js"></script>
+
 </body>
 
 </html>
